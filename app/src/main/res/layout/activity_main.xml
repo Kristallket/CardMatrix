@@ -21,7 +21,6 @@
         android:id="@+id/plita2"
         android:layout_width="60sp"
         android:layout_height="60sp"
-        app:layout_constraintBottom_toBottomOf="@+id/plita"
         app:layout_constraintStart_toEndOf="@+id/plita"
         app:layout_constraintTop_toTopOf="@+id/plita"
         app:srcCompat="@drawable/plita" />
@@ -62,24 +61,104 @@
         app:layout_constraintTop_toTopOf="@+id/plita5"
         app:srcCompat="@drawable/plita" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="158dp"
-        android:layout_height="141dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.565"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/plita7"
         android:layout_width="60sp"
         android:layout_height="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/plita"
+        app:srcCompat="@drawable/plita" />
+
+    <ImageView
+        android:id="@+id/plita8"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        app:layout_constraintStart_toEndOf="@+id/plita7"
+        app:layout_constraintTop_toBottomOf="@+id/plita2"
+        app:srcCompat="@drawable/plita" />
+
+    <ImageView
+        android:id="@+id/plita9"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        app:layout_constraintStart_toEndOf="@+id/plita8"
+        app:layout_constraintTop_toBottomOf="@+id/plita3"
+        app:srcCompat="@drawable/plita" />
+
+    <ImageView
+        android:id="@+id/plita10"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        app:layout_constraintStart_toEndOf="@+id/plita9"
+        app:layout_constraintTop_toBottomOf="@+id/plita4"
+        app:srcCompat="@drawable/plita" />
+
+    <ImageView
+        android:id="@+id/plita11"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        app:layout_constraintStart_toEndOf="@+id/plita10"
+        app:layout_constraintTop_toBottomOf="@+id/plita5"
+        app:srcCompat="@drawable/plita" />
+
+    <ImageView
+        android:id="@+id/plita12"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        app:layout_constraintStart_toEndOf="@+id/plita11"
+        app:layout_constraintTop_toBottomOf="@+id/plita6"
+        app:srcCompat="@drawable/plita" />
+
+    <Button
+        android:id="@+id/up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <Button
+        android:id="@+id/dawn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Dawn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/up" />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:text="Left"
+        app:layout_constraintBottom_toTopOf="@+id/dawn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/up"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        app:layout_constraintBottom_toTopOf="@+id/dawn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/left"
+        app:layout_constraintTop_toBottomOf="@+id/up" />
+
+    <ImageView
+        android:id="@+id/you"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
         app:layout_constraintStart_toStartOf="@+id/plita"
         app:layout_constraintTop_toTopOf="@+id/plita"
-        app:srcCompat="@drawable/box"
-        />
+        app:srcCompat="@drawable/gif" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
