@@ -109,7 +109,13 @@
         app:layout_constraintStart_toEndOf="@+id/plita11"
         app:layout_constraintTop_toBottomOf="@+id/plita6"
         app:srcCompat="@drawable/plita" />
-
+    <ImageView
+        android:id="@+id/you"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        app:layout_constraintStart_toStartOf="@+id/plita"
+        app:layout_constraintTop_toTopOf="@+id/plita"
+        app:srcCompat="@drawable/gif" />
     <Button
         android:id="@+id/up"
         android:layout_width="wrap_content"
@@ -122,11 +128,12 @@
         app:layout_constraintVertical_bias="0.468" />
 
     <Button
-        android:id="@+id/dawn"
+        android:id="@+id/dwn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
-        android:text="Dawn"
+        android:text="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/up" />
@@ -135,9 +142,10 @@
         android:id="@+id/left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
         android:text="Left"
-        app:layout_constraintBottom_toTopOf="@+id/dawn"
+        app:layout_constraintBottom_toTopOf="@+id/dwn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/up"
         app:layout_constraintVertical_bias="0.496" />
@@ -146,19 +154,13 @@
         android:id="@+id/right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="Right"
-        app:layout_constraintBottom_toTopOf="@+id/dawn"
+        app:layout_constraintBottom_toTopOf="@+id/dwn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintStart_toEndOf="@+id/left"
         app:layout_constraintTop_toBottomOf="@+id/up" />
-
-    <ImageView
-        android:id="@+id/you"
-        android:layout_width="60sp"
-        android:layout_height="60sp"
-        app:layout_constraintStart_toStartOf="@+id/plita"
-        app:layout_constraintTop_toTopOf="@+id/plita"
-        app:srcCompat="@drawable/gif" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
