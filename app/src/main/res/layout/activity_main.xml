@@ -8,10 +8,36 @@
     tools:context=".MainActivity">
 
 
+
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="60"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/plita"
-        />
+        android:id="@+id/plita1"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="15sp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plita" />
+
+    <ImageView
+        android:id="@+id/plita2"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="15sp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toEndOf="@+id/plita1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plita" />
+
+    <ImageView
+        android:id="@+id/you"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        app:layout_constraintStart_toStartOf="@+id/plita1"
+        app:layout_constraintTop_toTopOf="@+id/plita1"
+        app:srcCompat="@drawable/gif" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
